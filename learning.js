@@ -1,3 +1,4 @@
+'use strict'
 //Javascript
 
 //values and variables
@@ -31,10 +32,78 @@ const minus = '87' - '5';
 //truthy falsy
 // 5 falsy values - 0, ' ', undefined, null, NaN;
 let values;
-if (values) { console.log('value is present') } else console.log('no value');
+// if (values) { console.log('value is present') } else console.log('no value');
 
 //conditional operator
-const result = values ? console.log('value is present') : console.log('no value');
+// const result = values ? console.log('value is present') : console.log('no value');
 
 
 //Babel - transpile & polyfill your code.
+
+
+//use strict mode
+
+//function declaration vs function expression
+
+//function declaration
+function callPerson(firstName) {
+    console.log(this)
+    return firstName
+}
+
+//function expression
+const lastNameFn = function (lastName) {
+    return lastName
+}
+
+//arrow function
+const arrowFn = middleName => {
+    console.log(this)
+    return (
+        middleName
+    )
+};
+
+
+//Array -  array is an object - will not be in order
+const array1 = [12, 43, 55, 23, 'bye', 54, 321, 54, 'hello', true, { a: 'hello', b: 'bye' }];
+//array methods -
+//pop() - removes last element of an array and returns that element
+const arrresult = array1.pop()
+//shift() - removes first element of an array and returns that element
+const arrresult1 = array1.shift()
+//push() - add element to the last of the array
+const arrresult2 = array1.push(23)
+//unshift() - add element at the beginning of the array
+const arrresult3 = array1.unshift(34)
+
+//Object - key value pair - always be in order
+const obj = {
+    firstName: 'Vaishak',
+    lastName: 'Devaiah',
+    yearBirth: 1998,
+    details: {
+        school: 'st thomas'
+    },
+    calcAge: function () {
+        return 2024 - this.yearBirth
+    }
+};
+obj.address = "Gonikoppa"
+//object call - DOT notation and square bracket notation
+const infostored = 'lastName'
+
+function getInfo(info) {
+    return obj[`${info}`]
+    // return obj.info
+}
+// console.log(getInfo(infostored))
+//Function attached to an object is called as method
+
+//For loop - continue & break
+for (let i = 0; i < array1.length; i++) {
+    // console.log(array1[i])
+    // if (typeof array1[i] !== 'number') continue;
+    // console.log(array1[i]);
+    if (typeof array1[i] === 'object') console.log(array1[i].b)
+}
