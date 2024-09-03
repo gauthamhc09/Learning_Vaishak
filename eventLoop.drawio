@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.10">
+  <diagram name="Page-1" id="fI8UXjADphwHHtVXAqrB">
+    <mxGraphModel dx="794" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="70" width="620" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-8" value="JavaScript Runtime Environment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-2" value="Heap" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="250" y="140" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-3" value="Call stack" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="375" y="140" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-11" value="JS ENgine" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="110" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-13" value="DOM, setTimeout, FetchAPI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="140" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-17" value="WEb API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="605" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-19" value="call back queue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="270" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-20" value="console.log(&#39;hello&#39;)&lt;br&gt;setTimeout(&#39;settimeout&#39;)&lt;br&gt;console.log(&#39;bye&#39;)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nOTM1tmc3A_DFvCTjeYp-23" value="hello&lt;br&gt;bye&lt;br&gt;settimeout" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

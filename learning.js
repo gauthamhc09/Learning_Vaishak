@@ -42,6 +42,7 @@ let values;
 
 
 //use strict mode
+// someName = 'hellooooo'   - this will shown an error in strict mode
 
 //function declaration vs function expression
 
@@ -107,3 +108,38 @@ for (let i = 0; i < array1.length; i++) {
     // console.log(array1[i]);
     if (typeof array1[i] === 'object') console.log(array1[i].b)
 }
+
+
+//JS - High level object-oriented, multi paradigm programming lanaguage.
+
+//low level language - C programming - need to allocate memory
+//high level language - Python, Javascript - no need to allocate memory
+
+//Static typed language  - C - data type need to mention
+//Dynamically typed language - JS - data type no need mention
+
+
+//Garbage collected - removes all unused data
+
+//Just in Time compilation
+
+//multiparadigm programming - Object-oriented, Functional programming, procedural programming
+
+//prototype based object oriented
+
+//first class functions - funcitions can be passed as arguments, function can be returned from another function,
+//function can be used as values
+
+
+const child = function () {
+    return 'hello dad'
+}
+
+function parent() {
+    const subchild = function () {
+        return 'sub child'
+    }
+    return subchild
+}
+
+//JS - single threaded language
