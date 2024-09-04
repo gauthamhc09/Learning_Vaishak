@@ -114,5 +114,5 @@ function maxCharCopy(str) {
     }
     return `max value is ${max[0]}`
 }
-console.log(maxCharCopy('helllllloooooooooooooooooooo'))
+// console.log(maxCharCopy('helllllloooooooooooooooooooo'))
 

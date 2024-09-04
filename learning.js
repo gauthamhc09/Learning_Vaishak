@@ -143,3 +143,34 @@ function parent() {
 }
 
 //JS - single threaded language
+
+
+//Destructuting Array
+const numbersD = [10, 20, 30, 40, 60];
+
+const firstName = numbersD[0]
+const secondValue = numbersD[1]
+
+
+const [, , third, fourth, fifth = 50] = numbersD;
+// console.log(third, fourth, fifth)
+
+// let number1 = 40;
+// let number2 = 50;
+//nested array
+const nestedArray = [10, 20, 30, [40, 50]];
+const [, , , [fourthNested, fifthNested]] = nestedArray;
+
+//Destructuting Object
+const restaurant = {
+    name: 'empire',
+    dishes: ['biriyani', 'kushka', 'kabbab'],
+    openTimings: {
+        sun: 10,
+        mon: 12,
+        tue: 12
+    }
+}
+//naming
+const { name: restaurantName, dishes } = restaurant;
+console.log(restaurantName, dishes);
