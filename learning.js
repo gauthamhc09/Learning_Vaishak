@@ -155,8 +155,15 @@ const secondValue = numbersD[1]
 const [, , third, fourth, fifth = 50] = numbersD;
 // console.log(third, fourth, fifth)
 
-// let number1 = 40;
-// let number2 = 50;
+let number1 = 40;
+let number2 = 50;
+
+// number2 = number1 + number2;
+// number1 = number2 - number1;
+// number2 = number2 - number1;
+
+[number2, number1] = [number1, number2]
+
 //nested array
 const nestedArray = [10, 20, 30, [40, 50]];
 const [, , , [fourthNested, fifthNested]] = nestedArray;
@@ -172,5 +179,67 @@ const restaurant = {
     }
 }
 //naming
-const { name: restaurantName, dishes } = restaurant;
-console.log(restaurantName, dishes);
+// const { name: restaurantName, dishes } = restaurant;
+
+let someName = '';
+({ name: someName } = restaurant);
+
+const menu = ['pulav', 'chitranna'];
+const copyMenu = [...menu];
+
+const alex = 'Alex';
+
+function takeMultiple(task1, ...otherTasks) {
+    console.log(task1, otherTasks)
+}
+
+
+// console.log(takeMultiple('task1', 'task2', 'task3'))
+const arrValues = [1, 3, 4, 5, 6]; // address1675
+const arrValuesCopy = [1, 3, 4, 5, 6]; // address27786
+
+const inter = '12'; //adress12
+const interCopy = '12'; //adress121
+//primitivies - string, number, boolean, undefined, null - they are compared by values
+//non-primitives - objects, array  - they are compared by reference
+// console.log(arrValues === arrValuesCopy)
+// console.log(inter === interCopy)
+
+//spread operator - Unpack an array
+const arrValuess = [1, 3, 4, 5, 6];
+const arr2 = [23, 54, 65]
+const arrValuesCopys = [...arrValuess, ...arr2]
+console.log(arrValuesCopys)
+
+//rest operator - pack elements into an array;
+const [a, b, ...others] = arrValuess;
+// console.log(a, b, others)
+
+function callAPI(a, b, ...others) {
+    console.log(a, b, others)
+}
+const res = {
+    menu: ['starter', 'main', 'dessert'],
+    guestNumbers: 0
+}
+
+//Short Circuting (&& and ||)
+// || - if first value is truthy it will print
+const truthyValues = 3 || '';
+
+// const guestsAvailable = res.guestNumbers ? res.guestNumbers : 10;
+// const guestsAvailable = res.guestNumbers || 10;
+
+
+// && - if first value is false it will return
+console.log(30 && 'alex');
+
+
+// Nullish  Coalescing operator - only considers as false if value is null or undefined
+const guestsAvailable = res.guestNumbers ?? 10;
+// console.log(guestsAvailable)
+
+//logical assignment operator (ES2021)
+// res.guestNumbers = res.guestNumbers || 10;
+res.guestNumbers ||= 10;
+console.log(res)
